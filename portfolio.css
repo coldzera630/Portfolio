@@ -262,6 +262,7 @@ ul
 {
     font-size: 16px;
     font-weight: 600;
+    margin-right: 15px;
     display: block;
     border-bottom: 1px solid ;
     border-bottom: #595B83;
@@ -271,10 +272,6 @@ ul
 .aside .nav li a.active
 {
     color:var(--skin-color);
-}
-.aside .nav li a
-{
-    margin-right: 15 px;
 }
 /* home */
 .home{
@@ -314,9 +311,13 @@ h3.my-profession
     color: var(--skin-color);
 }
 .home-info p{
+    margin-top:50px ;
     margin-bottom: 70px;
     font-size: 20px;
     color: #595B83;
+}
+.home-info span{
+    color: var(--skin-color);
 }
 .home .home-img{
     flex: 0 0 40%;
@@ -377,6 +378,9 @@ h3.my-profession
     font-size: 16px;
     line-height: 25px;
     color: #595B83;
+}
+.about .about-content .about-text span{
+    color: var(--skin-color);
 }
 .about .about-content .personal-info
 {
@@ -491,7 +495,7 @@ h3.my-profession
 {
     position: relative;
     padding-left:37px;
-    padding-bottom: 50px;   
+    padding-bottom: 50px; 
 }
 .about .about-content .timeline .timeline-item:last-child
 {
