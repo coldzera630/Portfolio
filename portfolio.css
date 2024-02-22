@@ -88,7 +88,7 @@ ul
     margin-bottom: 60px;
 }
 .section-title h2{
-    font-size: 40px;
+    font-size: 42px;
     color: var(--skin-color);
     font-weight: 700;
     position: relative;
@@ -115,6 +115,7 @@ ul
 
 .row
 {
+    font-family:'Abril fat';
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -123,8 +124,9 @@ ul
 }
 .btn
 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
+    font-family:'Abril fat';
     padding: 12px 35px;
     color:black;
     border-radius: 40px;
@@ -260,8 +262,9 @@ ul
 }
 .aside .nav li a 
 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
+    font-family: 'Abril fat';
     margin-right: 15px;
     display: block;
     border-bottom: 1px solid ;
@@ -290,7 +293,8 @@ ul
 }
 h3.hello
 {
-    font-size: 28px;
+    font-size: 30px;
+    font-family: 'Abril fat';
     text-decoration:#595B83;
     margin: 15px 0;
 
@@ -303,7 +307,8 @@ h3.hello span{
 }
 h3.my-profession
 {
-    font-size: 30px;
+    font-size: 32px;
+    font-family:'Abril fat';
     margin: 15px 0;
 }
 .typing
@@ -313,7 +318,9 @@ h3.my-profession
 .home-info p{
     margin-top:50px ;
     margin-bottom: 70px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 200;
+    font-family:'Abril fat';
     color: #595B83;
 }
 .home-info span{
@@ -359,6 +366,7 @@ h3.my-profession
 {
     flex: 0 0 100%;
     max-width:100%;
+    font-family:'Abril fat';
 }
 .about .about-content .about-text
 {
@@ -366,8 +374,9 @@ h3.my-profession
     max-width: 100%;
 }
 .about .about-content .about-text h3{
-    font-size:24px;
+    font-size:26px;
     margin-bottom: 15px;
+    font-family:'Abril fat';
     font-weight: 700;
     color: #595B83;
 }
@@ -375,7 +384,7 @@ h3.my-profession
     color: var(--skin-color);
 }
 .about .about-content .about-text p{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
     color: #595B83;
 }
@@ -431,7 +440,7 @@ h3.my-profession
 .about .about-content .skills .skills-item h5{
     line-height: 40px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     color: var(--skin-color);
     text-transform: capitalize;
 }
@@ -473,7 +482,7 @@ h3.my-profession
 }
 
 .about .about-content h3.section-title{
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 30px;
     font-weight: 700;
 }
@@ -524,7 +533,7 @@ h3.my-profession
 .about .about-content .timeline .timeline-date
 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 12px;
     color: #595B83;
 }
@@ -534,7 +543,7 @@ h3.my-profession
 .about .about-content .timeline .timeline-title
 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     text-transform: capitalize;
     color: #595B83;   
@@ -542,7 +551,7 @@ h3.my-profession
 .about .about-content .timeline .timeline-text
 {
     line-height: 25px;
-    font-size: 16px;
+    font-size: 18px;
     text-align: justify;
     color: #595B83;
 }
