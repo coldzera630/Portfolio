@@ -1,0 +1,16 @@
+/* Custom Styles */
+body {
+    font-family: 'Libertinus Sans', sans-serif;
+}
+
+/* Animation for revealing sections on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyanshu Yadav | Portfolio</title>
+    <meta name="description" content="Personal portfolio for Divyanshu Yadav, a passionate developer showcasing projects and skills in tech, data, and consulting.">
+    <meta name="keywords" content="Divyanshu Yadav, portfolio, mern stack, fullstack developer, data analyst, consultant">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        royal: {
+                            '50': '#f0f5ff', '100': '#e0eaff', '200': '#c8d9ff', '300': '#a3bfff',
+                            '400': '#7b9eff', '500': '#5275ff', '600': '#3652ff', '700': '#2541e8',
+                            '800': '#1f35b8', '900': '#1d3192', '950': '#111c56'
+                        },
+                        intense: {
+                            '50': '#ecfeff', '100': '#cffafe', '200': '#a5f3fc', '300': '#67e8f9',
+                            '400': '#22d3ee', '500': '#06b6d4', '600': '#0891b2', '700': '#0e7490',
+                            '800': '#155e75', '900': '#164e63', '950': '#083344'
+                        }
+                    }
+                }
+            }
+        }
+        function applyTheme() {
+            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+        }
+        applyTheme();
+    </script>
+</head>
+<body class="antialiased font-sans bg-slate-50 text-slate-800 dark:bg-black dark:text-slate-200 transition-colors duration-300">
+
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-slate-50/80 dark:bg-black/80 backdrop-blur-sm shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-royal-600 dark:text-intense-400">DY</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="nav-link text-slate-600 dark:text-slate-300 hover:text-royal-600 dark:hover:text-intense-400">Home</a>
+                <a href="#about" class="nav-link text-slate-600 dark:text-slate-300 hover:text-royal-600 dark:hover:text-intense-400">About</a>
+                <a href="#skills" class="nav-link text-slate-600 dark:text-slate-300 hover:text-royal-600 dark:hover:text-intense-400">Skills</a>
+                <a href="#projects" class="nav-link text-slate-600 dark:text-slate-300 hover:text-royal-600 dark:hover:text-intense-400">Projects</a>
+                <a href="#contact" class="nav-link text-slate-600 dark:text-slate-300 hover:text-royal-600 dark:hover:text-intense-400">Contact</a>
+            </div>
+            <div class="flex items-center">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-200 dark:hover:bg-gray-800"><i data-lucide="sun" class="h-5 w-5 block dark:hidden"></i><i data-lucide="moon" class="h-5 w-5 hidden dark:block"></i></button>
+                <button id="mobile-menu-button" class="md:hidden ml-4 p-2"><i data-lucide="menu" class="h-6 w-6"></i></button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden"><a href="#home" class="block py-2 px-6 text-sm hover:bg-slate-200 dark:hover:bg-gray-800">Home</a><a href="#about" class="block py-2 px-6 text-sm hover:bg-slate-200 dark:hover:bg-gray-800">About</a><a href="#skills" class="block py-2 px-6 text-sm hover:bg-slate-200 dark:hover:bg-gray-800">Skills</a><a href="#projects" class="block py-2 px-6 text-sm hover:bg-slate-200 dark:hover:bg-gray-800">Projects</a><a href="#contact" class="block py-2 px-6 text-sm hover:bg-slate-200 dark:hover:bg-gray-800">Contact</a></div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+                    <h3 class="text-2xl md:text-3xl font-medium text-slate-700 dark:text-slate-300">Hello, It's Me</h3>
+                    <h1 class="text-4xl md:text-6xl font-bold my-3">Divyanshu Yadav</h1>
+                    <h3 class="text-2xl md:text-3xl font-medium text-slate-700 dark:text-slate-300">And I'm a <span id="typed-text" class="text-royal-600 dark:text-intense-400"></span></h3>
+                    <p class="mt-4 max-w-lg mx-auto md:mx-0 text-slate-600 dark:text-slate-400">A versatile and driven professional with a strong foundation in software development, data analysis, and strategic leadership.</p>
+                    <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="https://github.com/coldzera630" target="_blank" class="h-10 w-10 flex items-center justify-center rounded-full border-2 border-royal-500 text-royal-500 hover:bg-royal-500 hover:text-white dark:border-intense-500 dark:text-intense-500 dark:hover:bg-intense-500 dark:hover:text-black transition-all"><i data-lucide="github" class="h-5 w-5"></i></a>
+                        <a href="https://www.linkedin.com/in/divyanshu-yadav-692b96283/" target="_blank" class="h-10 w-10 flex items-center justify-center rounded-full border-2 border-royal-500 text-royal-500 hover:bg-royal-500 hover:text-white dark:border-intense-500 dark:text-intense-500 dark:hover:bg-intense-500 dark:hover:text-black transition-all"><i data-lucide="linkedin" class="h-5 w-5"></i></a>
+                    </div>
+                    <a href="#projects" class="mt-8 inline-block bg-royal-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-royal-700 dark:bg-intense-500 dark:hover:bg-intense-400 dark:text-black shadow-lg">View My Work</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center"><div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-royal-400 to-royal-600 dark:from-intense-600 dark:to-intense-400 shadow-2xl flex items-center justify-center"><img src="https://placehold.co/400x400/3b82f6/FFFFFF?text=DY" alt="Divyanshu Yadav Portrait" class="w-full h-full object-cover rounded-full p-2 bg-slate-50 dark:bg-black"></div></div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-white dark:bg-gray-950">
+            <div class="container mx-auto px-6 reveal">
+                <h2 class="text-4xl font-bold text-center mb-12">About <span class="text-royal-600 dark:text-intense-400">Me</span></h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3 flex justify-center">
+                        <div class="w-60 h-60 md:w-72 md:h-72 rounded-lg bg-gradient-to-br from-royal-400 to-royal-600 dark:from-intense-600 dark:to-intense-400 shadow-xl flex items-center justify-center">
+                            <img src="https://placehold.co/400x400/60a5fa/FFFFFF?text=About" alt="About me image" class="w-full h-full object-cover rounded-lg p-1.5 bg-white dark:bg-gray-950">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 text-center md:text-left">
+                        <h3 class="text-3xl font-semibold mb-4">Fullstack MERN Developer</h3>
+                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I am a passionate and results-driven software developer specializing in the MERN stack. My experience at Frantic Infotech involved engineering full-stack applications where I successfully increased user engagement by 15% and reduced server response times by 20% through targeted API optimization. I thrive on building scalable, user-friendly web solutions and continuously seek to expand my technical capabilities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20"><div class="container mx-auto px-6 reveal"><h2 class="text-4xl font-bold text-center mb-12">My <span class="text-royal-600 dark:text-intense-400">Skills</span></h2><div id="skills-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 text-center"></div></div></section>
+        
+        <section id="projects" class="py-20 bg-white dark:bg-gray-950"><div class="container mx-auto px-6 reveal"><h2 class="text-4xl font-bold text-center mb-12">Latest <span class="text-royal-600 dark:text-intense-400">Projects</span></h2><div id="projects-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div></div></section>
+        
+        <section id="contact" class="py-20"><div class="container mx-auto px-6 reveal"><h2 class="text-4xl font-bold text-center mb-12">Contact <span class="text-royal-600 dark:text-intense-400">Me</span></h2><div class="max-w-3xl mx-auto"><form id="contact-form" class="space-y-6"><div class="grid md:grid-cols-2 gap-6"><input type="text" id="name" name="name" placeholder="Full Name" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-gray-800 border-slate-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-royal-500 dark:focus:ring-intense-500" required><input type="email" id="email" name="email" placeholder="Email Address" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-gray-800 border-slate-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-royal-500 dark:focus:ring-intense-500" required></div><input type="text" id="subject" name="subject" placeholder="Subject" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-gray-800 border-slate-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-royal-500 dark:focus:ring-intense-500" required><textarea id="message" name="message" rows="6" placeholder="Your Message" class="w-full p-3 rounded-lg bg-slate-100 dark:bg-gray-800 border-slate-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-royal-500 dark:focus:ring-intense-500" required></textarea><div class="text-center"><button type="submit" class="bg-royal-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-royal-700 dark:bg-intense-500 dark:hover:bg-intense-400 dark:text-black shadow-lg">Send Message</button></div></form><div id="form-status" class="mt-6 text-center"></div></div></div></section>
+    </main>
+
+    <footer class="bg-white dark:bg-gray-950 border-t border-slate-200 dark:border-gray-800 py-6"><div class="container mx-auto px-6 text-center text-slate-600 dark:text-slate-400"><p>&copy; 2025 Divyanshu Yadav | All Rights Reserved.</p></div></footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
